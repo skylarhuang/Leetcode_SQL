@@ -1,0 +1,6 @@
+--178. 	Rank Scores
+--(1)	 π”√DENSE RANK∫ÕWINDOW FUNCTION
+SELECT Score, DENSE_RANK() OVER (
+ORDER BY Score DESC) AS Rank 
+FROM Scores
+
